@@ -19,7 +19,7 @@
   "homepage": "https://github.com/iarna/unique-filename",
   "devDependencies": {
     "standard": "^3.7.3",
-    "tap": "^1.0.0"
+    "tap": "^2.3.1"
   },
   "dependencies": {
     "unique-slug": "^2.0.0"
