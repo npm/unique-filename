@@ -30,4 +30,4 @@ then this string plus a hyphen are prepended to the unique part.
 
 *uniqstr* – Optional, if not passed the unique part of the resulting
 filename will be random.  If passed in it will be generated from this string
-in a reproducable way.
+in a reproducible way.
