@@ -1,5 +1,19 @@
 # Changelog
 
+## [3.0.0](https://github.com/npm/unique-filename/compare/v2.0.1...v3.0.0) (2022-10-14)
+
+### ⚠️ BREAKING CHANGES
+
+* `unique-filename` is now compatible with the following semver range for node: `^14.17.0 || ^16.13.0 || >=18.0.0`
+
+### Features
+
+* [`6412fef`](https://github.com/npm/unique-filename/commit/6412fef797b004c4029e963510cba63012abedbd) [#26](https://github.com/npm/unique-filename/pull/26) postinstall for dependabot template-oss PR (@lukekarrys)
+
+### Dependencies
+
+* [`50d9443`](https://github.com/npm/unique-filename/commit/50d9443f1df8e3a172114f7c08596c345a99f1ea) [#32](https://github.com/npm/unique-filename/pull/32) bump unique-slug from 3.0.0 to 4.0.0
+
 ## [2.0.1](https://github.com/npm/unique-filename/compare/v2.0.0...v2.0.1) (2022-08-25)
 
 
