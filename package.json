@@ -29,7 +29,7 @@
     "tap": "^16.3.0"
   },
   "dependencies": {
-    "unique-slug": "^3.0.0"
+    "unique-slug": "^4.0.0"
   },
   "files": [
     "bin/",
