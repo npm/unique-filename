@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.1](https://github.com/npm/unique-filename/compare/v3.0.0...v3.0.1) (2024-04-21)
+
+### Chores
+
+* [`5019e3b`](https://github.com/npm/unique-filename/commit/5019e3b3e02041fbba1ac29f73ce993bdf97ed19) [#73](https://github.com/npm/unique-filename/pull/73) postinstall for dependabot template-oss PR (@lukekarrys)
+* [`679ae7b`](https://github.com/npm/unique-filename/commit/679ae7b78abb1dfe1eb7386e1de6e59434abd479) [#73](https://github.com/npm/unique-filename/pull/73) bump @npmcli/template-oss from 4.21.3 to 4.21.4 (@dependabot[bot])
+
 ## [3.0.0](https://github.com/npm/unique-filename/compare/v2.0.1...v3.0.0) (2022-10-14)
 
 ### ⚠️ BREAKING CHANGES
