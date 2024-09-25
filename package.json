@@ -1,6 +1,6 @@
 {
   "name": "unique-filename",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Generate a unique filename for use in temporary directories or caches.",
   "main": "lib/index.js",
   "scripts": {
