@@ -1,5 +1,17 @@
 # Changelog
 
+## [5.0.0](https://github.com/npm/unique-filename/compare/v4.0.0...v5.0.0) (2025-10-22)
+### ⚠️ BREAKING CHANGES
+* `unique-filename` now supports node `^20.17.0 || >=22.9.0`
+### Bug Fixes
+* [`304a435`](https://github.com/npm/unique-filename/commit/304a4357894a1c646404ef8509fc431635a1a26a) [#97](https://github.com/npm/unique-filename/pull/97) align to npm 11 node engine range (@owlstronaut)
+### Dependencies
+* [`30d9f39`](https://github.com/npm/unique-filename/commit/30d9f391e4d6fe4c964d0437fa8740c12c41602c) [#97](https://github.com/npm/unique-filename/pull/97) `unique-slug@6.0.0`
+### Chores
+* [`9a60e04`](https://github.com/npm/unique-filename/commit/9a60e0472596ff96d872d5712a7ee4f0f74b57c8) [#97](https://github.com/npm/unique-filename/pull/97) template-oss-apply (@owlstronaut)
+* [`9c86293`](https://github.com/npm/unique-filename/commit/9c86293ea3333179d96db330743d62020ec830a3) [#90](https://github.com/npm/unique-filename/pull/90) postinstall workflow updates (#90) (@owlstronaut)
+* [`39c8890`](https://github.com/npm/unique-filename/commit/39c88905acd1d8769cebf2899f80f300f986463d) [#95](https://github.com/npm/unique-filename/pull/95) bump @npmcli/template-oss from 4.26.0 to 4.27.1 (#95) (@dependabot[bot], @npm-cli-bot)
+
 ## [4.0.0](https://github.com/npm/unique-filename/compare/v3.0.0...v4.0.0) (2024-09-25)
 ### ⚠️ BREAKING CHANGES
 * `unique-filename` now supports node `^18.17.0 || >=20.5.0`
