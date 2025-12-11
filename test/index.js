@@ -1,22 +1,36 @@
-var t = require('tap')
-var uniqueFilename = require('..')
+const { test } = require('node:test')
+const assert = require('node:assert')
+const uniqueFilename = require('..')
 
-t.plan(6)
+test('random tmp file', () => {
+  const randomTmpfile = uniqueFilename('tmp')
+  assert.match(randomTmpfile, /^tmp.[a-f0-9]{8}$/)
+})
 
-var randomTmpfile = uniqueFilename('tmp')
-t.match(randomTmpfile, /^tmp.[a-f0-9]{8}$/, 'random tmp file')
+test('random tmp files are not the same', () => {
+  const randomTmpfile = uniqueFilename('tmp')
+  const randomAgain = uniqueFilename('tmp')
+  assert.notEqual(randomAgain, randomTmpfile)
+})
 
-var randomAgain = uniqueFilename('tmp')
-t.not(randomAgain, randomTmpfile, 'random tmp files are not the same')
+test('random prefixed tmp file', () => {
+  const randomPrefixedTmpfile = uniqueFilename('tmp', 'my-test')
+  assert.match(randomPrefixedTmpfile, /^tmp.my-test-[a-f0-9]{8}$/)
+})
 
-var randomPrefixedTmpfile = uniqueFilename('tmp', 'my-test')
-t.match(randomPrefixedTmpfile, /^tmp.my-test-[a-f0-9]{8}$/, 'random prefixed tmp file')
+test('random prefixed tmp files are not the same', () => {
+  const randomPrefixedTmpfile = uniqueFilename('tmp', 'my-test')
+  const randomPrefixedAgain = uniqueFilename('tmp', 'my-test')
+  assert.notEqual(randomPrefixedAgain, randomPrefixedTmpfile)
+})
 
-var randomPrefixedAgain = uniqueFilename('tmp', 'my-test')
-t.not(randomPrefixedAgain, randomPrefixedTmpfile, 'random prefixed tmp files are not the same')
+test('unique filename', () => {
+  const uniqueTmpfile = uniqueFilename('tmp', 'testing', '/my/thing/to/uniq/on')
+  assert.match(uniqueTmpfile, /^tmp.testing-7ddd44c0$/)
+})
 
-var uniqueTmpfile = uniqueFilename('tmp', 'testing', '/my/thing/to/uniq/on')
-t.match(uniqueTmpfile, /^tmp.testing-7ddd44c0$/, 'unique filename')
-
-var uniqueAgain = uniqueFilename('tmp', 'testing', '/my/thing/to/uniq/on')
-t.equal(uniqueTmpfile, uniqueAgain, 'same unique string component produces same filename')
+test('same unique string component produces same filename', () => {
+  const uniqueTmpfile = uniqueFilename('tmp', 'testing', '/my/thing/to/uniq/on')
+  const uniqueAgain = uniqueFilename('tmp', 'testing', '/my/thing/to/uniq/on')
+  assert.strictEqual(uniqueTmpfile, uniqueAgain)
+})
