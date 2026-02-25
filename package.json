@@ -30,9 +30,7 @@
     "@npmcli/eslint-config": "^6.0.0",
     "@npmcli/template-oss": "4.28.1"
   },
-  "dependencies": {
-    "unique-slug": "^6.0.0"
-  },
+  "dependencies": {},
   "files": [
     "bin/",
     "lib/"
