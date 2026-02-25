@@ -26,7 +26,7 @@ test('random prefixed tmp files are not the same', () => {
 
 test('unique filename', () => {
   const uniqueTmpfile = uniqueFilename('tmp', 'testing', '/my/thing/to/uniq/on')
-  assert.match(uniqueTmpfile, /^tmp.testing-7ddd44c0$/)
+  assert.match(uniqueTmpfile, /^tmp.testing-baa80893$/)
 })
 
 test('same unique string component produces same filename', () => {
