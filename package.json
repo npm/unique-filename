@@ -31,7 +31,7 @@
     "@npmcli/template-oss": "5.1.0"
   },
   "dependencies": {
-    "unique-slug": "^6.0.0"
+    "unique-slug": "^7.0.0"
   },
   "files": [
     "bin/",
