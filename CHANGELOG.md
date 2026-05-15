@@ -1,5 +1,22 @@
 # Changelog
 
+## [6.0.0](https://github.com/npm/unique-filename/compare/v5.0.0...v6.0.0) (2026-05-15)
+### ⚠️ BREAKING CHANGES
+* `unique-filename` now supports node `^22.22.2 || ^24.15.0 || >=26.0.0`
+* template-oss-apply
+### Features
+* [`5b33ba7`](https://github.com/npm/unique-filename/commit/5b33ba7f3ba938872654b342f865788ea6cc52cb) [#109](https://github.com/npm/unique-filename/pull/109) bump to new node engine range (@owlstronaut)
+* [`2928f44`](https://github.com/npm/unique-filename/commit/2928f4483dde265291875c43498b9ea681145a7f) [#109](https://github.com/npm/unique-filename/pull/109) template-oss-apply (@owlstronaut)
+### Dependencies
+* [`a143c1f`](https://github.com/npm/unique-filename/commit/a143c1fa526bb44a4666f5f87bebb03d1c2953d6) [#109](https://github.com/npm/unique-filename/pull/109) `unique-slug@7.0.0`
+### Chores
+* [`b157d8f`](https://github.com/npm/unique-filename/commit/b157d8fae510e2a5875797ecb08e8dc4efc35b1b) [#109](https://github.com/npm/unique-filename/pull/109) template-oss-apply (@owlstronaut)
+* [`e01226d`](https://github.com/npm/unique-filename/commit/e01226deda8f3031eb87e0cbdaca256b72bfb871) [#109](https://github.com/npm/unique-filename/pull/109) bumping @npmcli/template-oss from 4.30.0 to 5.1.0 (@owlstronaut)
+* [`f76307a`](https://github.com/npm/unique-filename/commit/f76307a2235c67f76ee4cdbdc3e9200612ce1d8f) [#102](https://github.com/npm/unique-filename/pull/102) remove tap (@owlstronaut)
+* [`2d01838`](https://github.com/npm/unique-filename/commit/2d01838a0764eefc928a130ea127fb9ba29fff3f) [#102](https://github.com/npm/unique-filename/pull/102) swap from tap to built-in node:test (@owlstronaut)
+* [`82dfda0`](https://github.com/npm/unique-filename/commit/82dfda0d178e6e4a77d445ff2384d901a30cb5f0) [#99](https://github.com/npm/unique-filename/pull/99) bump @npmcli/eslint-config from 5.1.0 to 6.0.0 (#99) (@dependabot[bot])
+* [`17d1dfd`](https://github.com/npm/unique-filename/commit/17d1dfdaa35ba0eeadfa4ba58300f64c14f831b4) [#106](https://github.com/npm/unique-filename/pull/106) bump @npmcli/template-oss from 4.29.0 to 4.30.0 (#106) (@dependabot[bot], @npm-cli-bot)
+
 ## [5.0.0](https://github.com/npm/unique-filename/compare/v4.0.0...v5.0.0) (2025-10-22)
 ### ⚠️ BREAKING CHANGES
 * `unique-filename` now supports node `^20.17.0 || >=22.9.0`
