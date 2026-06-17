@@ -28,7 +28,7 @@
   "homepage": "https://github.com/iarna/unique-filename",
   "devDependencies": {
     "@npmcli/eslint-config": "^7.0.0",
-    "@npmcli/template-oss": "5.1.0"
+    "@npmcli/template-oss": "5.1.1"
   },
   "dependencies": {
     "unique-slug": "^7.0.0"
